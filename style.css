@@ -131,6 +131,12 @@ h2::after {
     margin-bottom: 0.5rem;
 }
 
+.project a {
+    text-decoration: none;
+    background-color: none;
+    color: #000;
+}
+
 /* Project hover effect */
 .project:hover {
     transform: translateY(-10px);
