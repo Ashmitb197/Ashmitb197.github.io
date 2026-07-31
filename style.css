@@ -62,75 +62,6 @@ a { color: inherit; }
     );
 }
 
-<<<<<<< HEAD
-/* ===== Scanline overlay ===== */
-.scanlines {
-    position: fixed; inset: 0; pointer-events: none; z-index: 999;
-    background: repeating-linear-gradient(
-        to bottom, rgba(0,0,0,0.18) 0px, rgba(0,0,0,0.18) 1px, transparent 2px, transparent 3px
-    );
-    mix-blend-mode: multiply;
-    opacity: .5;
-}
-
-/* ===== HUD ===== */
-.hud {
-    position: fixed; top: 14px; right: 14px; z-index: 1000;
-    display: flex; gap: 10px; align-items: center;
-    font-size: .6rem; background: var(--shadow-hard);
-    color: var(--gold); padding: 8px 10px; border: 3px solid var(--ink);
-=======
-/* ===== Pixel cursor ===== */
-body, a, button {
-    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 8' shape-rendering='crispEdges'><path fill='%23f7d51d' d='M0 0h1v6h1v-2h1v2h1v-2h1v2h1v-4h1v-1h-1v-1h-4v1h-1z'/><path fill='%2305040c' d='M0 6h1v1h-1zM1 5h1v1h-1zM6 1h1v1h-1zM6 2h1v1h-1z'/></svg>") 2 2, auto;
-}
-
-/* ===== Boot screen ===== */
-.boot-screen {
-    position: fixed; inset: 0; z-index: 2000;
-    background: var(--shadow-hard);
-    color: var(--green);
-    display: flex; flex-direction: column;
-    align-items: flex-start; justify-content: center;
-    padding: 8vw;
-    font-family: 'Press Start 2P', monospace;
-    transition: opacity .5s ease;
-}
-.boot-screen.hidden { opacity: 0; pointer-events: none; }
-.boot-lines {
-    font-family: 'VT323', monospace;
-    font-size: 1.4rem;
-    line-height: 1.9;
-    white-space: pre-wrap;
-    text-shadow: 0 0 6px var(--green);
-}
-.boot-skip {
-    margin-top: 2rem;
-    font-family: 'Press Start 2P', monospace;
-    font-size: .6rem;
-    color: var(--muted);
-    animation: blink 1.4s steps(1) infinite;
->>>>>>> test
-}
-.hud-label { color: var(--pink); }
-
-<<<<<<< HEAD
-=======
-/* ===== Coin particles ===== */
-.coin-particle {
-    position: fixed;
-    width: 10px; height: 10px;
-    background: var(--gold);
-    box-shadow: 0 0 0 2px var(--shadow-hard);
-    pointer-events: none;
-    z-index: 1500;
-    animation: coin-burst .6s ease-out forwards;
-}
-@keyframes coin-burst {
-    0% { opacity: 1; transform: translate(0, 0) scale(1); }
-    100% { opacity: 0; transform: translate(var(--dx), var(--dy)) scale(.4); }
-}
-
 /* ===== Scanline overlay ===== */
 .scanlines {
     position: fixed; inset: 0; pointer-events: none; z-index: 999;
@@ -150,7 +81,6 @@ body, a, button {
 }
 .hud-label { color: var(--pink); }
 
->>>>>>> test
 /* ===== Header ===== */
 header { padding: 3rem 0 1.5rem; position: relative; overflow: hidden; }
 
