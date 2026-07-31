@@ -45,6 +45,20 @@ h1, h2, h3, .btn, .theme-toggle, .hud, nav a, .level-tag, .eyebrow {
     font-family: 'Press Start 2P', monospace;
 }
 
+.resume-btn {
+    position: fixed;
+    top: 14px; left: 14px;
+    z-index: 1000;
+    padding: 10px 14px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: .6rem;
+    color: var(--ink);
+    text-decoration: none;
+    background: var(--panel);
+    transition: transform .15s ease;
+}
+.resume-btn:hover { transform: translate(-2px, -2px); color: var(--gold); }
+
 .container { width: 88%; max-width: 1100px; margin: 0 auto; padding: 20px; }
 
 a { color: inherit; }
