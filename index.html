@@ -3,158 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of a Game Developer and Programmer">
-    <title>Ashmit Bhardwaj | Software Developer</title>
+    <meta name="description" content="Portfolio of Ashmit Bhardwaj — Game Developer & Programmer">
+    <title>Ashmit Bhardwaj // Player Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="color">
+
+    <div class="boot-screen" id="boot-screen" aria-hidden="true">
+        <pre class="boot-lines" id="boot-lines"></pre>
+        <p class="boot-skip">press any key to skip</p>
+    </div>
+
+    <!-- HUD -->
+    <div class="hud" aria-hidden="true">
+        <span class="hud-label">P1</span>
+        <span class="hud-score" id="hud-score">SCORE 000000</span>
+    </div>
+
+    <div class="scanlines" aria-hidden="true"></div>
+
     <header>
         <div class="container header-grid">
-            <div class="brand">
-                <h1 class="site-title">Ashmit Bhardwaj</h1>
-                <p class="site-tagline">Software Developer • Game Systems & Procedural Animation</p>
-            </div>
-
             <div class="header-actions">
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+                <button id="theme-toggle" class="pixel-frame theme-toggle" aria-label="Swap cartridge (toggle palette)">🕹️ SWAP</button>
             </div>
 
-            <div class="hero">
-                <h2 class="hero-title">Hi — I'm Ashmit. I build games and systems that feel alive.</h2>
-                <p class="hero-lead">From gameplay mechanics to procedural animation — making interactions feel delightful is my craft.</p>
-                <a href="#projects" class="btn primary-cta">View Projects</a>
+            <div class="hero reveal">
+                <p class="eyebrow">// NEW GAME</p>
+                <h1 class="hero-title glow">ASHMIT<br>BHARDWAJ</h1>
+                <p class="hero-lead">Software Developer — Game Systems &amp; Procedural Animation</p>
+                <a href="#projects" class="btn primary-cta blink-soft">▶ PRESS START</a>
             </div>
         </div>
     </header>
 
-        <nav class="primary-nav">
-            <div class="container">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <section id="about">
+    <nav class="primary-nav">
         <div class="container">
-            <h2>About Me</h2>
-            <p style="text-align: justify;">Здравствуй (Hello), I'm Ashmit Bhardwaj currently persuing my Computer Science's Bachlor Degree at Chandigarh University with a passion for game development. I specialize in creating engaging mechanics and robust in-game systems. I love bringing creative ideas to life through code. I also share interest in procedural animations. Speaking of development, I enjoy engaging with a variety of technologies and am open to working with other technological domains as well.</p>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILL-TREE</a></li>
+                <li><a href="#projects">PROJET SELECT</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2><span class="tag">01</span>Profile</h2>
+            <div class="dialogue-box pixel-frame reveal">
+                <p class="dialogue-line">&gt; LOADING PROFILE...</p>
+                <p>Hey, I'm Ashmit — final-year Computer Science student at Chandigarh University, currently pursuing my Bachelor's degree with a focus on game development. I build engaging mechanics and robust in-game systems, and I love bringing creative ideas to life through code.</p>
+                <p>Outside of gameplay logic I'm into procedural animation, and I'm always up for exploring new technical territory beyond game dev.</p>
+                <p class="dialogue-continue">▾ press any key to continue</p>
+            </div>
         </div>
     </section>
 
     <section id="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Unreal Engine</li>
-                <li>Unity</li>
-                <li>Godot</li>
-                <li>UI/UX</li>
-                <li>Adobe Photoshop</li>
-                <li>Operating System</li>
-                <li>Microsoft Office</li>
-                <li>OOP</li>
-                <li>C++</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>MySQL</li>
-                <li>Java</li>
-                <li>Objective-C</li>
-            </ul>
+            <h2><span class="tag">02</span>Skill-Tree</h2>
+
+            <div class="inventory">
+                <div class="inventory-group reveal">
+                    <h3 class="inventory-label">Engines</h3>
+                    <ul class="skills-list">
+                        <li class="pixel-frame">Unreal Engine</li>
+                        <li class="pixel-frame">Unity</li>
+                        <li class="pixel-frame">Godot</li>
+                    </ul>
+                </div>
+
+                <div class="inventory-group reveal">
+                    <h3 class="inventory-label">Languages</h3>
+                    <ul class="skills-list">
+                        <li class="pixel-frame">C++</li>
+                        <li class="pixel-frame">C#</li>
+                        <li class="pixel-frame">Python</li>
+                        <li class="pixel-frame">Java</li>
+                        <li class="pixel-frame">Objective-C</li>
+                        <li class="pixel-frame">MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="inventory-group reveal">
+                    <h3 class="inventory-label">Tools &amp; Craft</h3>
+                    <ul class="skills-list">
+                        <li class="pixel-frame">UI/UX</li>
+                        <li class="pixel-frame">Adobe Photoshop</li>
+                        <li class="pixel-frame">OOP</li>
+                        <li class="pixel-frame">Operating Systems</li>
+                        <li class="pixel-frame">Microsoft Office</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <h2><span class="tag">03</span> Project Select</h2>
 
             <div class="project-grid">
 
                 <a href="https://ashmitb197.itch.io/cubescape" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project">
-                        <img src="data/img/CubescapeLogo.png" alt="CubeScape Screenshot">
+                    <div class="project pixel-frame">
+                        <span class="level-tag">LVL 01</span>
+                        <img src="data/img/CubescapeLogo.png" alt="CubeScape Screenshot" loading="lazy">
                         <h3>CubeScape</h3>
                         <p>A puzzle-platformer where cubes, switches, and pressure plates challenge your every move.</p>
+                        <span class="score-pop" aria-hidden="true">+10</span>
                     </div>
                 </a>
 
                 <a href="https://ashmitb197.itch.io/prison-escape" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project">
-                        <img src="data/img/prisonescape.png" alt="Prison Escape Screenshot">
+                    <div class="project pixel-frame">
+                        <span class="level-tag">LVL 02</span>
+                        <img src="data/img/prisonescape.png" alt="Prison Escape Screenshot" loading="lazy">
                         <h3>Prison Escape</h3>
                         <p>Unity-based level and animation demo set in a prison environment.</p>
+                        <span class="score-pop" aria-hidden="true">+10</span>
                     </div>
                 </a>
 
                 <a href="https://ashmitb197.itch.io/tank-fight-game" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project">
-                        <img src="data/img/TTGLogo.png" alt="Tank Fight Game Screenshot">
+                    <div class="project pixel-frame">
+                        <span class="level-tag">LVL 03</span>
+                        <img src="data/img/TTGLogo.png" alt="Tank Fight Game Screenshot" loading="lazy">
                         <h3>The Tank Fight Game</h3>
                         <p>A dynamic tank battle game with AI-controlled opponents, built in Unity.</p>
+                        <span class="score-pop" aria-hidden="true">+10</span>
                     </div>
                 </a>
 
                 <a href="https://ashmitb197.itch.io/break-it" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project">
-                        <img src="data/img/BreakIT.png" alt="Break IT Logo">
+                    <div class="project pixel-frame">
+                        <span class="level-tag">LVL 04</span>
+                        <img src="data/img/BreakIT.png" alt="Break IT Logo" loading="lazy">
                         <h3>Break IT</h3>
-                        <p>A 2D arcade-style game reminiscent of classic "Breakout" or "Arkanoid" where players control a paddle to bounce a ball and destroy blocks.</p>
+                        <p>A 2D arcade-style "Breakout"-inspired game — control a paddle, bounce a ball, destroy blocks.</p>
+                        <span class="score-pop" aria-hidden="true">+10</span>
                     </div>
                 </a>
 
                 <a href="https://github.com/Ashmitb197/MatplotGUI" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project">
-                        <img src="data/img/MatplotGUI.png" alt="MatplotGUI Logo">
+                    <div class="project pixel-frame">
+                        <span class="level-tag">LVL 05</span>
+                        <img src="data/img/MatplotGUI.png" alt="MatplotGUI Logo" loading="lazy">
                         <h3>MatplotGUI</h3>
                         <p>A GUI tool built with Tkinter and Matplotlib, enabling users to generate charts visually without writing code.</p>
+                        <span class="score-pop" aria-hidden="true">+10</span>
                     </div>
                 </a>
 
                 <a href="https://ashmitb197.itch.io/walk-to-hell" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project">
-                        <img src="data/img/WTH.png" alt="Walktohell Screenshot">
+                    <div class="project pixel-frame">
+                        <span class="level-tag">LVL 06</span>
+                        <img src="data/img/WTH.png" alt="Walktohell Screenshot" loading="lazy">
                         <h3>Walktohell</h3>
-                        <p>A 2D action-adventure game developed in Unity with C# scripting, focused on exploration and combat mechanics.</p>
+                        <p>A 2D action-adventure game built in Unity with C#, focused on exploration and combat mechanics.</p>
+                        <span class="score-pop" aria-hidden="true">+10</span>
                     </div>
                 </a>
 
                 <a href="https://github.com/Ashmitb197/Calaculator" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project">
-                        <img src="data/img/PythonCalc.png" alt="Calculator Logo">
+                    <div class="project pixel-frame">
+                        <span class="level-tag">LVL 07</span>
+                        <img src="data/img/PythonCalc.png" alt="Calculator Logo" loading="lazy">
                         <h3>Python Calculator</h3>
-                        <p>A functional calculator app built using Python’s Tkinter for a clean and intuitive GUI interface.</p>
+                        <p>A functional calculator app built using Python's Tkinter for a clean, intuitive GUI.</p>
+                        <span class="score-pop" aria-hidden="true">+10</span>
                     </div>
                 </a>
 
-            </div> </div>
-    </section>
+                <div class="project pixel-frame secret-level" id="secret-level">
+                    <span class="level-tag">LVL ??</span>
+                    <div class="secret-level-body">
+                        <p class="secret-title">🏆 ACHIEVEMENT UNLOCKED</p>
+                        <p>You found the Konami Code. Not many recruiters make it this far — that curiosity is exactly what I look for in a good playtester (or a good teammate).</p>
+                        <p class="secret-sub">Nice going, Player One.</p>
+                    </div>
+                </div>
 
+            </div>
+
+            <p class="easter-egg-hint">psst — try ↑ ↑ ↓ ↓ ← → ← → B A</p>
+        </div>
+    </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>If you're interested in collaborating or discussing game development, feel free to reach out:</p>
-            <ul>
-                <li>Email: ashmitb189@outlook.com</li>
-                <li><a href="https://linkedin.com/in/ashmit-b" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://github.com/Ashmitb197" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://ashmitb197.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></li>
-
-            </ul>
+            <h2><span class="tag">04</span> Contacts</h2>
+            <div class="dialogue-box pixel-frame reveal contact-box">
+                <p>Continue the game outside this browser tab:</p>
+                <ul class="contact-list">
+                    <li><span class="cursor">▸</span> <a href="mailto:ashmitb189@outlook.com">ashmitb189@outlook.com</a></li>
+                    <li><span class="cursor">▸</span> <a href="https://linkedin.com/in/ashmit-b" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><span class="cursor">▸</span> <a href="https://github.com/Ashmitb197" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><span class="cursor">▸</span> <a href="https://ashmitb197.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ashmit Bhardwaj. All Rights Reserved.</p>
+            <p>© 2026 Ashmit Bhardwaj — CONTINUE? <span class="blink-soft">_</span></p>
         </div>
     </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <script src="scripts.js"></script>
 </body>

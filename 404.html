@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME OVER // Ashmit Bhardwaj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gameover-wrap {
+            min-height: 100vh;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            text-align: center; gap: 1.5rem; padding: 2rem;
+        }
+        .gameover-title {
+            font-size: 2.4rem;
+            color: var(--pink);
+            text-shadow: 0 0 8px var(--pink), 0 0 20px var(--pink);
+        }
+        .gameover-code {
+            font-family: 'VT323', monospace;
+            font-size: 1.6rem;
+            color: var(--muted);
+        }
+        .gameover-msg {
+            font-family: 'VT323', monospace;
+            font-size: 1.3rem;
+            max-width: 480px;
+            color: var(--ink);
+        }
+        .continue-count {
+            font-family: 'Press Start 2P', monospace;
+            font-size: .7rem;
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body data-theme="color">
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <div class="gameover-wrap">
+        <p class="gameover-code">ERROR 404</p>
+        <h1 class="gameover-title glow">GAME OVER</h1>
+        <p class="gameover-msg">This level doesn't exist — the page you're looking for has been moved, deleted, or never spawned in the first place.</p>
+        <p class="continue-count blink-soft">CONTINUE? 9</p>
+        <a href="index.html" class="btn primary-cta">▶ RESPAWN AT HOME</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
